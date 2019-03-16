@@ -2,8 +2,7 @@
   .header-container
     header.header
       .logo-container
-        img.logo(src="@/assets/logo.png" alt="logo")
-        img.logo-right(src="@/assets/logo.png" alt="logo")
+        <i class="fas fa-frog"></i>
       nav.big-nav
         ul.nav-list
           li.big-header
@@ -23,7 +22,6 @@
       .pop-extra(v-on:click="hide = !hide")
       .pop-flex-container
         .pop-header(v-on:click="hide = !hide")
-          img.pop-logo(src="@/assets/logo.png" alt="logo")
           p.pop-menu-x
             | X
         nav(v-on:click="hide = !hide")
@@ -52,7 +50,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .header-container {
-  font-family: "Major Mono Display", monospace;
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo {
@@ -94,13 +92,17 @@ export default Vue.extend({
   margin: 0 1rem;
 }
 
+.fa-frog {
+  margin: 18px 0 0 20px;
+}
+
 .hamburger {
-  margin: 27px 20px 27px 0;
+  margin: 15px 20px 15px 0;
   cursor: pointer;
 }
 
 .hamburger-line {
-  border: 1.5px solid #59E0FF;
+  border: 1px solid #fff;
   width: 25px;
   margin: 5px;
 }
@@ -122,7 +124,7 @@ export default Vue.extend({
   width: 100%;
   top: 0;
   height: 100%;
-  color: #59E0FF;
+  color: #fff;
   opacity: 0.93;
   z-index: 3;
   transition: 0.2s ease-in-out;
@@ -132,14 +134,14 @@ export default Vue.extend({
     position: absolute;
     right: 23.5px;
     font-size: 1.8rem;
-    margin-top: 26px;
-    margin-right: 4px;
+    margin-top: 12px;
+    margin-right: 6px;
     cursor: pointer;
-    color: #59E0FF;
+    color: #fff;
   }
 
   nav {
-    margin: 0;
+    margin: 5px 0 0 0;
     background-color: #000;
     width: 100%;
     height: 100%;
@@ -147,6 +149,7 @@ export default Vue.extend({
 
     ul {
       padding-left: 30px;
+      margin-top: 25px;
     }
 
     li {

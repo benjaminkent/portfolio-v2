@@ -1,8 +1,6 @@
 <template lang="pug">
   #app
-    Home
-    h1
-      | this is my app.. Portfolio version 2 baby!
+    router-view
 </template>
 
 <script lang="ts">
@@ -19,7 +17,13 @@ export default Vue.extend({
 
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
 body {
   margin: 0;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
 }
 </style>

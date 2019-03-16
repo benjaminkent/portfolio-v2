@@ -1,7 +1,6 @@
 <template lang="pug">
   .home-container
     Header
-    img(src="@/assets/vue-logo.png")
 </template>
 
 <script lang="ts">
