@@ -2,7 +2,7 @@
   .header-container
     header.header
       .logo-container
-        <i class="fas fa-frog"></i>
+        <i class="fas fa-elephant"></i>
       nav.big-nav
         ul.nav-list
           li.big-header
@@ -10,10 +10,10 @@
               | Home
           li.big-header
             a(href="#")
-              | About
+              | Portfolio
           li.big-header
             a(href="#")
-              | in the Hill
+              | Resume
       .hamburger(v-on:click="hide = !hide")
         .hamburger-line
         .hamburger-line
@@ -29,9 +29,9 @@
             li.link
               | Home
             li.link
-              | About
+              | Portfolio
             li.link
-              | in the Hill
+              | Resume
 </template>
 
 <script lang="ts">
@@ -66,9 +66,9 @@ export default Vue.extend({
 .header {
   position: fixed;
   width: 100%;
-  background-color: black;
+  background-color: #0f0f0f;
   color: white;
-  box-shadow: 0px 0.5px 5px black;
+  box-shadow: 0px 0.5px 5px #0f0f0f;
   z-index: 2;
   display: flex;
   justify-content: space-between;
@@ -77,12 +77,12 @@ export default Vue.extend({
 .nav-list {
   list-style-type: none;
   display: flex;
-  margin: 2.5rem 0 0 0;
-  padding: 0;
+  margin: 12px 0 0 0;
+  padding: 0 0 12px 0;
   justify-content: space-around;
 
   a {
-    color: #59E0FF;
+    color: #fff;
     text-decoration: none;
     font-size: 1.3rem;
   }
@@ -92,7 +92,8 @@ export default Vue.extend({
   margin: 0 1rem;
 }
 
-.fa-frog {
+.fa-elephant {
+  font-size: 1.2rem;
   margin: 18px 0 0 20px;
 }
 
@@ -154,7 +155,7 @@ export default Vue.extend({
 
     li {
       list-style: none;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       padding: 1.5rem 0;
     }
   }
