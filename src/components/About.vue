@@ -4,17 +4,32 @@
       h2
         | Hello, My name is Ben.
       h2
-        | Thanks for visiting!
+        | Thanks for visiting my site!
     .about-text
       p
-        | I like being a software engineer!
+        | {{ text[0].text }}
+      p
+        | {{ text[1].text }}
+      p
+        | {{ text[2].text }}
+      p
+        | {{ text[3].text }}
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+const text = require("@/data/about-text.json")
 
 export default Vue.extend({
-  name: "about"
+  name: "about",
+  data () {
+    return {
+      text: null
+    }
+  },
+  mounted () {
+    this.text = text
+  }
 })
 </script>
 
@@ -33,6 +48,10 @@ export default Vue.extend({
     margin: 0;
     padding: 0;
   }
+}
+
+.about-text {
+  margin: 10px;
 }
 </style>
 

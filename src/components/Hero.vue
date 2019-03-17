@@ -64,5 +64,10 @@ h1 {
   left: 100px;
   color: #fff;
   margin: 0;
+  text-shadow: 
+    -1px -1px 0 #2d3319,
+    1px -1px 0 #2d3319,
+    -1px 1px 0 #2d3319,
+    1px 1px 0 #2d3319;
 }
 </style>
