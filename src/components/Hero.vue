@@ -26,8 +26,8 @@ export default Vue.extend({
 }
 
 .hero-image {
-  margin-top: 30px;
-  padding-top: 250px;
+  margin: 0;
+  padding-top: 230px;
   background: url("../assets/beach-altered1.png");
   height: 290px;
   background-position: center center;
@@ -37,7 +37,7 @@ export default Vue.extend({
 }
 
 .hero-text {
-  margin-top: 75px;
+  margin-top: 45px;
   position: absolute;
   display: flex;
   flex-direction: column;

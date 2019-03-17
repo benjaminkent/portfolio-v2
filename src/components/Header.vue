@@ -77,6 +77,7 @@ export default Vue.extend({
   z-index: 2;
   display: flex;
   justify-content: space-between;
+  opacity: 0.9;
 }
 
 .nav-list {

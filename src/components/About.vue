@@ -14,6 +14,8 @@
         | {{ text[2].text }}
       p
         | {{ text[3].text }}
+      span
+
 </template>
 
 <script lang="ts">
@@ -35,14 +37,24 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .about-container {
-  background-color: #f4f4f4;
+  color: #0f0f0f;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+  padding-bottom: 20px;
 }
 
 .intro {
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  font-family: 'Roboto Slab', serif;
 
   h2 {
     margin: 0;
@@ -51,7 +63,13 @@ export default Vue.extend({
 }
 
 .about-text {
-  margin: 10px;
+  margin: 0 20px 20px 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 </style>
 
