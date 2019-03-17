@@ -14,6 +14,9 @@
           li.big-header
             a(href="#")
               | Resume
+          li.big-header
+            a(href="#")
+              | Blog
       .hamburger(v-on:click="hide = !hide")
         .hamburger-line
         .hamburger-line
@@ -32,6 +35,8 @@
               | Portfolio
             li.link
               | Resume
+            li.link
+              | Blog
 </template>
 
 <script lang="ts">
@@ -84,7 +89,7 @@ export default Vue.extend({
   a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -94,11 +99,11 @@ export default Vue.extend({
 
 .fa-elephant {
   font-size: 1.2rem;
-  margin: 18px 0 0 20px;
+  margin: 12px 0 0 20px;
 }
 
 .hamburger {
-  margin: 15px 20px 15px 0;
+  margin: 8px 20px 8px 0;
   cursor: pointer;
 }
 
@@ -176,7 +181,7 @@ export default Vue.extend({
   margin-right: -100%;
 }
 
-@media (max-width: 559px) {
+@media (max-width: 550px) {
   .big-header {
     display: none;
   }

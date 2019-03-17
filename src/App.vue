@@ -17,7 +17,7 @@ export default Vue.extend({
 
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Pacifico|Roboto+Slab|Raleway:400,700');
 
 body {
   margin: 0;

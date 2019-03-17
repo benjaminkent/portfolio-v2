@@ -1,11 +1,11 @@
 <template lang="pug">
   .hero-container
     .hero-text
-      h1.hero-welcome
+      h1.creative
         | Creative
-      h1.hill
+      h1.innovative
         | Innovative
-      h1
+      h1.forward
         | Forward Thinking
     .hero-image
 </template>
@@ -46,8 +46,19 @@ export default Vue.extend({
   height: 450px;
 }
 
+.creative {
+  font-family: 'Pacifico', cursive;
+}
+
+.innovative {
+  font-family: 'Roboto Slab', serif;
+}
+
+.forward {
+  font-family: 'Cabin', sans-serif;
+}
+
 h1 {
-  font-family: 'Raleway', sans-serif;
   font-size: 3rem;
   text-align: center;
   left: 100px;
