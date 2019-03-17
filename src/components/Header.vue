@@ -110,7 +110,7 @@ export default Vue.extend({
 
 .hamburger-line {
   border: 1px solid #fff;
-  width: 25px;
+  width: 23px;
   margin: 5px;
 }
 
@@ -140,8 +140,8 @@ export default Vue.extend({
   .pop-menu-x {
     position: absolute;
     right: 23.5px;
-    font-size: 1.8rem;
-    margin-top: 4px;
+    font-size: 25px;
+    margin-top: 6px;
     margin-right: 6px;
     cursor: pointer;
     color: #fff;

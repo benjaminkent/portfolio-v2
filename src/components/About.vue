@@ -14,12 +14,26 @@
         | {{ text[2].text }}
       p
         | {{ text[3].text }}
-      span
+    SocialMedia
+    ul.contact
+      li
+        i.fas.fa-phone
+      li
+        i.fas.fa-envelope
+      li
+        i.fab.fa-linkedin-in
+      li
+        i.fab.fa-github
+      li
+        i.fab.fa-twitter
+      li
+        i.fab.fa-instagram
 
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import SocialMedia from "@/components/SocialMedia.vue"
 const text = require("@/data/about-text.json")
 
 export default Vue.extend({
@@ -31,7 +45,8 @@ export default Vue.extend({
   },
   mounted () {
     this.text = text
-  }
+  },
+  components: { SocialMedia }
 })
 </script>
 
@@ -70,6 +85,20 @@ export default Vue.extend({
 p {
   margin: 0 0 15px 0;
   padding: 0;
+}
+
+ul  {
+  margin-top: 30px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+svg {
+  margin: 0 8px;
+  color: #0f0f0f;
 }
 </style>
 

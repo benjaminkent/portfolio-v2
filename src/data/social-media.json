@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "link": "https://www.linkedin.com/in/benjaminkentjehl",
+    "class": "fab.fa-linkedin-in",
+    "title": "LinkedIn"
+  },
+  {
+    "id": 2,
+    "link": "https://github.com/benjaminkent?tab=repositories",
+    "class": "fab.fa-github",
+    "title": "Github"
+  },
+  {
+    "id": 3,
+    "link": "https://twitter.com/BenjaminJehl",
+    "class": "fab.fa-twitter",
+    "title": "Twitter"
+  },
+  {
+    "id": 4,
+    "link": "https://www.instagram.com/benjaminkent7/",
+    "class": "fab.fa-instagram",
+    "title": "Instagram"
+  }
+]
