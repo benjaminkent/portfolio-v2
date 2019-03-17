@@ -2,38 +2,36 @@
   .about-container
     .intro
       h2
-        | Hello, My name is Ben.
+        | Hello! My name is Ben
       h2
-        | Thanks for visiting my site!
+        | Thanks for visiting my site
     .about-text
-      p
-        | {{ text[0].text }}
-      p
-        | {{ text[1].text }}
-      p
-        | {{ text[2].text }}
-      p
-        | {{ text[3].text }}
-    SocialMedia
+      p(v-for="paragraph in text")
+        | {{ paragraph.text }}
     ul.contact
       li
-        i.fas.fa-phone
+        a(href="tel://17276199736" title="Call or Text")
+          i.fas.fa-phone
       li
-        i.fas.fa-envelope
+        a(href="mailto:benjamin.k.jehl@gmail.com" title="Send an email")
+          i.fas.fa-envelope
       li
-        i.fab.fa-linkedin-in
+        a(href="https://www.linkedin.com/in/benjaminkentjehl" title="LinkedIn" target="_blank")
+          i.fab.fa-linkedin-in
       li
-        i.fab.fa-github
+        a(href="https://github.com/benjaminkent?tab=repositories" title="Github" target="_blank")
+          i.fab.fa-github
       li
-        i.fab.fa-twitter
+        a(href="https://twitter.com/BenjaminJehl" title="Twitter" target="_blank")
+          i.fab.fa-twitter
       li
-        i.fab.fa-instagram
+        a(href="https://www.instagram.com/benjaminkent7/" title="Instagram" target="_blank")
+          i.fab.fa-instagram
 
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import SocialMedia from "@/components/SocialMedia.vue"
 const text = require("@/data/about-text.json")
 
 export default Vue.extend({
@@ -45,8 +43,7 @@ export default Vue.extend({
   },
   mounted () {
     this.text = text
-  },
-  components: { SocialMedia }
+  }
 })
 </script>
 
@@ -96,9 +93,12 @@ ul  {
   padding: 0;
 }
 
+a {
+  color: #0f0f0f;
+}
+
 svg {
   margin: 0 8px;
-  color: #0f0f0f;
 }
 </style>
 
