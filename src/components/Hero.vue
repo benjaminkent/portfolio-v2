@@ -37,7 +37,7 @@ export default Vue.extend({
 }
 
 .hero-text {
-  margin-top: 90px;
+  margin-top: 75px;
   position: absolute;
   display: flex;
   flex-direction: column;

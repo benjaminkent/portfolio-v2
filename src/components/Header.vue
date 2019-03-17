@@ -115,7 +115,7 @@ export default Vue.extend({
 
 .pop-header {
   display: flex;
-  background-color: #000;
+  background-color: #0f0f0f;
   width: 100%;
 }
 
@@ -140,15 +140,15 @@ export default Vue.extend({
     position: absolute;
     right: 23.5px;
     font-size: 1.8rem;
-    margin-top: 12px;
+    margin-top: 4px;
     margin-right: 6px;
     cursor: pointer;
     color: #fff;
   }
 
   nav {
-    margin: 5px 0 0 0;
-    background-color: #000;
+    margin: 0;
+    background-color: #0f0f0f;
     width: 100%;
     height: 100%;
     padding-top: 20px;
