@@ -10,24 +10,23 @@
         | {{ paragraph.text }}
     ul.contact
       li
-        a(href="tel://17276199736" title="Call or Text")
+        a.fa-phone(href="tel://17276199736" title="Call or Text")
           i.fas.fa-phone
       li
-        a(href="mailto:benjamin.k.jehl@gmail.com" title="Send an email")
+        a.fa-envelope(href="mailto:benjamin.k.jehl@gmail.com" title="Send an email")
           i.fas.fa-envelope
       li
-        a(href="https://www.linkedin.com/in/benjaminkentjehl" title="LinkedIn" target="_blank")
+        a.fa-linkedin-in(href="https://www.linkedin.com/in/benjaminkentjehl" title="LinkedIn" target="_blank")
           i.fab.fa-linkedin-in
       li
-        a(href="https://github.com/benjaminkent?tab=repositories" title="Github" target="_blank")
+        a.fa-github(href="https://github.com/benjaminkent?tab=repositories" title="Github" target="_blank")
           i.fab.fa-github
       li
-        a(href="https://twitter.com/BenjaminJehl" title="Twitter" target="_blank")
+        a.fa-twitter(href="https://twitter.com/BenjaminJehl" title="Twitter" target="_blank")
           i.fab.fa-twitter
       li
-        a(href="https://www.instagram.com/benjaminkent7/" title="Instagram" target="_blank")
+        a.fa-instagram(href="https://www.instagram.com/benjaminkent7/" title="Instagram" target="_blank")
           i.fab.fa-instagram
-
 </template>
 
 <script lang="ts">
@@ -48,6 +47,30 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+.fa-instagram:hover {
+  color: #7f00ff;
+}
+
+.fa-twitter:hover {
+  color: #0000ff;
+}
+
+.fa-github:hover {
+  color: #00ff00;
+}
+
+.fa-linkedin-in:hover {
+  color: #cccc00;
+}
+
+.fa-envelope:hover {
+  color: #ff5000;
+}
+
+.fa-phone:hover {
+  color: #ff0000;
+}
+
 .about-container {
   color: #0f0f0f;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 100%);
@@ -71,6 +94,7 @@ export default Vue.extend({
   h2 {
     margin: 0;
     padding: 0;
+    font-size: 1.5rem;
   }
 }
 
@@ -82,6 +106,10 @@ export default Vue.extend({
 p {
   margin: 0 0 15px 0;
   padding: 0;
+}
+
+.contact {
+  margin-top: 20px;
 }
 
 ul  {
